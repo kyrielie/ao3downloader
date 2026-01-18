@@ -6,7 +6,7 @@ PLEASE GO READ the ao3downloader README first before using this extension.
 
 ## Quick Start
 
-Use `python cli.py` to download fics.
+Use `python cli.py` to download fics. (full or relative file path)
 
 Or install using pip:
 ```
@@ -15,10 +15,15 @@ pip install -e .
 ```
 Run ao3downloadercli to download files.
 
-Or make your own shell script
+Or make your own shell script:
+```
+chmod +x ao3downloadercli.sh
+ln -s ao3downloadercli.sh ao3downloader
+```
+
 I don't like my files going relative to which directory I'm currently in, so I make a custom shell script to run in the same directory I used to run `ao3downloader.py` before you could PyPi install.
 
-Use the full path output of `which python` and the full path of `cli.py` in ao3downloadercli.sh and add `ao3downloadercli` to path or drop a symlink where your path already points. Is this the proper way to do things? Idk it works...
+Use the full path output of `which python` and the full path of `cli.py` in ao3downloadercli.sh and add `ao3downloadercli` to path somehow— I usually drop a symlink where my path already points for homebrew. Is this the proper way to do things? Idk it works...
 
 ```
 usage: cli.py [-h] [--format {epub,pdf,azw3,mobi,html}] [--no-login] urlortextfile [pages]
