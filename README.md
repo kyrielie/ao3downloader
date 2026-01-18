@@ -53,11 +53,13 @@ options:
   --no-login            Disable login (default: enabled)
   ```
 
+Make sure you wrap urls in " quote marks `"https://archiveofourown.org/works..."` to avoid errors.
+
 For some reason it was easiest for me to write code that expects multiple formats in the form: `-f epub -f html -f mobi` etc. But also it's not working right now idk why :sob:, so only one format at a time.
 
 So like you could also put multiple search / paged links interspaced with work links in your text file and number of pages you want to download from each, but why would you do that. I do not recommend doing that.
 
-Still not sure how to start from last page stopped on with this.
+Still not sure how to start from last page stopped on with this. I think if your link contains the `&page=#` at the end that is the page that you will start downloading at.
 
 ## Helpful Tips
 
@@ -86,14 +88,14 @@ Sometimes the join is two links on the same line that you have to go in and fix.
 
 So the reason I wrote this originally is not because I am a habitual CLI data hoarder. I am that, but also before I discovered a way to get an OR search to work on AO3 I required massive links that excluded so much stuff I had already read or didn't want to read.
 
-Those search links were so incredibly massive that they maxed out my browser url limit (2000 characters) but before that point they maxed out my terminal paste limit. There maybe a way to fix `input()` like that but I wanted to stop having to tell ao3downloader my preferences each time anyways and just type out one command.
+Those search links were so incredibly massive that they maxed out my browser url limit (2000 characters) but before that point they maxed out my terminal paste limit. There may be a way to fix `input()` like that but I wanted to stop having to tell ao3downloader my preferences each time anyways and just type out one command.
 
 I later found that you can simply use and OR operator in the [Search Within Results](https://archiveofourown.org/admin_posts/329) field. You can also use a NOT operator to filter out specific authors.
 
-These are the fandoms I'm in:
+These are ids for the fandoms I'm in:
 `fandom_ids:143679061 OR fandom_ids:2692 OR fandom_ids:5450 OR fandom_ids:6943 OR fandom_ids:101375 OR fandom_ids:136512 OR fandom_ids:232768 OR fandom_ids:236208 OR fandom_ids:258526 OR fandom_ids:524391 OR fandom_ids:658827 OR fandom_ids:969647 OR fandom_ids:1147379 OR fandom_ids:8774227 OR fandom_ids:10104017 OR fandom_ids:17959080 OR fandom_ids:18245130 OR fandom_ids:27251507 OR fandom_ids:42817852 OR fandom_ids:74497137 OR fandom_ids:109615657 OR fandom_ids:124953688 OR fandom_ids:541437 OR fandom_ids:190901`
 
 To get the fandom id tag, you can use the checkboxes in the exclude section and keep excluding everything while sorting in a popular tag, then unchecking everything you don't want to get a url contianing all the (encoded) tags you want. Then just decode that url and format the ids how you need.
 
-
+My previous scripts were named epub.py and sendlink.py, very descriptive and very intuitive. Epub did text files with links and sendlink dealt with links nad text files with links. Or something. I really forgot, which is why I needed to rewrite them and properly document everything. Luckily I remembered enough that I was able to merge the two together.
 
