@@ -28,6 +28,7 @@ dependencies = [
 
 [project.scripts]
 ao3downloader = "ao3downloader:main.ao3downloader"
+ao3downloadercli = "ao3downloader.cli.cli:main"
 
 [project.urls]
 Homepage = "https://nianeyna.dev/ao3downloader"

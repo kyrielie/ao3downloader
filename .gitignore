@@ -7,3 +7,12 @@ __pycache__/
 /data.json
 /settings.ini
 /ignorelist.txt
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS Finder tags
+*.swp
+*.swo
