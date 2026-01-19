@@ -35,6 +35,7 @@ I don't like my files going relative to which directory I'm currently in, so I m
 
 Use the full path output of `which python` and the full path of `cli.py` in ao3downloadercli.sh and add `ao3downloadercli` to path somehow— I usually drop a symlink where my path already points for homebrew. Is this the proper way to do things? Idk it works...
 
+# How to Use
 ```
 usage: cli.py [-h] [--format {epub,pdf,azw3,mobi,html}] [--no-login] urlortextfile [pages]
 
