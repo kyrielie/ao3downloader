@@ -20,16 +20,11 @@ Use `python cli.py` to download fics. (full or relative file path)
 
 Or install using pip:
 ```
-cd ao3downloader
+cd ao3downloadercli
 pip install -e .
 ```
 Run ao3downloadercli to download files.
 
-Or make your own shell script:
-```
-chmod +x ao3downloadercli.sh
-ln -s ao3downloadercli.sh ao3downloader
-```
 
 I don't like my files going relative to which directory I'm currently in, so I make a custom shell script to run in the same directory I used to run `ao3downloader.py` before you could PyPi install.
 
