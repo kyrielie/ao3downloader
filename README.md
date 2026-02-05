@@ -12,7 +12,7 @@ Beta software: may contain bugs or unintended behavior. Use at your own risk. Fe
 ## Quick Start
 
 I recommend cloning this repo and testing with that so nothing in your existing ao3downloader directory breaks.
-`git clone https://github.com/kyrielie/ao3downloader`
+`git clone https://github.com/kyrielie/ao3downloadercli`
 
 I personally modified my existing ao3downloader directory by adding `ao3downloader/ao3downloader/cli/cli/cli.py` and replacing `pyproject.toml`.
 
