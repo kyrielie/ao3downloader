@@ -82,11 +82,11 @@ Sometimes the join is two links on the same line that you have to go in and fix.
 
 ### AO3 Searching
 
-So the reason I wrote this originally is not because I am a habitual CLI data hoarder. I am that, but also before I discovered a way to get an OR search to work on AO3 I required massive links that excluded so much stuff I had already read or didn't want to read.
+So the reason I wrote this originally is not because I am a habitual data hoarder. I am that, but also before I discovered a way to get an OR search to work on AO3 I required massive links that excluded so much stuff I had already read or didn't want to read.
 
 Those search links were so incredibly massive that they maxed out my browser url limit (2000 characters) but before that point they maxed out my terminal paste limit. There may be a way to fix `input()` like that but I wanted to stop having to tell ao3downloader my preferences each time anyways and just type out one command.
 
-I later found that you can simply use and OR operator in the [Search Within Results](https://archiveofourown.org/admin_posts/329) field. You can also use a NOT operator to filter out specific authors.
+I later found that you can simply use and OR operator in the [Search Within Results](https://archiveofourown.org/admin_posts/329) field. You can also use [this cheatsheet](https://archiveofourown.org/admin_posts/10851). I find the operator `-creators: username to filter out all works by a particular creator` to filter out specific authors useful.
 
 These are ids for the fandoms I'm in:
 `fandom_ids:143679061 OR fandom_ids:2692 OR fandom_ids:5450 OR fandom_ids:6943 OR fandom_ids:101375 OR fandom_ids:136512 OR fandom_ids:232768 OR fandom_ids:236208 OR fandom_ids:258526 OR fandom_ids:524391 OR fandom_ids:658827 OR fandom_ids:969647 OR fandom_ids:1147379 OR fandom_ids:8774227 OR fandom_ids:10104017 OR fandom_ids:17959080 OR fandom_ids:18245130 OR fandom_ids:27251507 OR fandom_ids:42817852 OR fandom_ids:74497137 OR fandom_ids:109615657 OR fandom_ids:124953688 OR fandom_ids:541437 OR fandom_ids:190901`
